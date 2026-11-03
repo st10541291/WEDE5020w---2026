@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a free, no-obligation quote from Sipho's Custom Carpentry for kitchen cabinets, wardrobes, or custom furniture in Cape Town.">
+    <meta name="keywords" content="get carpentry quote Cape Town, kitchen cabinet quote Khayelitsha, wardrobe pricing Cape Town">
+    <meta name="author" content="Sipho's Custom Carpentry">
+    <title>Request a Free Quote | Sipho's Custom Carpentry</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">Sipho's Custom Carpentry</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Request a Quote</h1>
+            <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+        </section>
+
+        <section class="form-container container">
+            <form id="enquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="enqName">Full Name *</label>
+                    <input type="text" id="enqName" name="name" required minlength="2">
+                    <span class="error" id="enqNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enqEmail">Email Address *</label>
+                    <input type="email" id="enqEmail" name="email" required>
+                    <span class="error" id="enqEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enqPhone">Phone Number *</label>
+                    <input type="tel" id="enqPhone" name="phone" required pattern="[0-9]{10}" placeholder="e.g. 0821234567">
+                    <span class="error" id="enqPhoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enqFurniture">Furniture Type *</label>
+                    <select id="enqFurniture" name="furniture" required>
+                        <option value="">-- Select --</option>
+                        <option value="kitchen-cabinets">Kitchen Cabinets</option>
+                        <option value="wardrobe">Built-in Wardrobe</option>
+                        <option value="tv-stand">TV Stand</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error" id="enqFurnitureError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enqMaterial">Material Preference *</label>
+                    <select id="enqMaterial" name="material" required>
+                        <option value="">-- Select --</option>
+                        <option value="melamine">Melamine (affordable)</option>
+                        <option value="solid-wood">Solid Wood (premium)</option>
+                        <option value="not-sure">Not sure yet</option>
+                    </select>
+                    <span class="error" id="enqMaterialError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enqSize">Approximate Size / Dimensions</label>
+                    <input type="text" id="enqSize" name="size" placeholder="e.g. 3m x 2.5m kitchen">
+                </div>
+
+                <div class="form-group">
+                    <label for="enqBudget">Budget Range</label>
+                    <select id="enqBudget" name="budget">
+                        <option value="under-5000">Under R5,000</option>
+                        <option value="5000-10000">R5,000 – R10,000</option>
+                        <option value="10000-20000">R10,000 – R20,000</option>
+                        <option value="over-20000">Over R20,000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="enqMessage">Additional Details</label>
+                    <textarea id="enqMessage" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+
+            <div id="enquiryResponse" class="form-response"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sipho's Custom Carpentry. All rights reserved.</p>
+        <p>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a> |
+            <a href="https://wa.me/27000000000" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

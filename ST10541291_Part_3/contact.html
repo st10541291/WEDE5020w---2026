@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sipho's Custom Carpentry in Khayelitsha, Cape Town. Call, WhatsApp, or email us for custom kitchen cabinets, wardrobes, and furniture.">
+    <meta name="keywords" content="contact carpenter Khayelitsha, Sipho's Custom Carpentry contact, custom furniture Cape Town phone">
+    <meta name="author" content="Sipho's Custom Carpentry">
+    <title>Contact Us | Sipho's Custom Carpentry — Cape Town</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">Sipho's Custom Carpentry</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you.</p>
+        </section>
+
+        <section class="container contact-info">
+            <div class="contact-details">
+                <h2>Get in Touch</h2>
+                <p><strong>Phone/WhatsApp:</strong> +27 00 000 0000</p>
+                <p><strong>Email:</strong> <a href="mailto:info@siphoscarpentry.co.za">info@siphoscarpentry.co.za</a></p>
+                <h2>Business Hours</h2>
+                <p><strong>Monday – Friday:</strong> 08:00 – 17:00</p>
+                <p><strong>Saturday:</strong> 09:00 – 13:00</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+            <div class="contact-form-wrap">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="conName">Your Name *</label>
+                        <input type="text" id="conName" name="name" required>
+                        <span class="error" id="conNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="conEmail">Your Email *</label>
+                        <input type="email" id="conEmail" name="email" required>
+                        <span class="error" id="conEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="conType">Message Type *</label>
+                        <select id="conType" name="type" required>
+                            <option value="">-- Select --</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership</option>
+                        </select>
+                        <span class="error" id="conTypeError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="conMessage">Message *</label>
+                        <textarea id="conMessage" name="message" rows="5" required minlength="10"></textarea>
+                        <span class="error" id="conMessageError"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="contactResponse" class="form-response"></div>
+            </div>
+        </section>
+
+        <!-- Interactive map with two locations -->
+        <section class="container">
+            <h2>Find Us</h2>
+            <p><strong>Main Workshop:</strong> Khayelitsha, Cape Town</p>
+            <p><strong>Service Hub:</strong> Cape Town CBD (by appointment only)</p>
+            <div id="map" class="map-container"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sipho's Custom Carpentry. All rights reserved.</p>
+        <p>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a> |
+            <a href="https://wa.me/27000000000" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+    </footer>
+
+    <!-- Leaflet map script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Two locations: Khayelitsha workshop + Cape Town service hub
+        var map = L.map('map').setView([-34.02, 18.55], 10);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+        L.marker([-34.036, 18.677]).addTo(map)
+            .bindPopup('<strong>Sipho\'s Workshop</strong><br>Khayelitsha, Cape Town');
+        L.marker([-33.924, 18.424]).addTo(map)
+            .bindPopup('<strong>Cape Town Service Hub</strong><br>By appointment only');
+        L.circle([-34.036, 18.677], {
+            color: '#A9744F', fillColor: '#A9744F', fillOpacity: 0.1, radius: 15000
+        }).addTo(map);
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

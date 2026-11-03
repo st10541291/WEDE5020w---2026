@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Custom kitchen cabinets, built-in wardrobes, and TV stands in Cape Town. Compare Melamine vs Solid Wood and request a free quote from Sipho's Custom Carpentry.">
+    <meta name="keywords" content="custom carpentry services, kitchen cabinets Cape Town, wardrobes Khayelitsha, melamine vs solid wood furniture">
+    <meta name="author" content="Sipho's Custom Carpentry">
+    <title>Custom Carpentry Services | Kitchen Cabinets, Wardrobes & TV Stands</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">Sipho's Custom Carpentry</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Our Services</h1>
+            <p>Custom carpentry tailored to your home and budget.</p>
+        </section>
+
+        <!-- Search box (dynamic filter) -->
+        <section class="container search-section">
+            <label for="serviceSearch" class="search-label">Search our services:</label>
+            <input type="search" id="serviceSearch" placeholder="e.g., kitchen, wardrobe, TV stand...">
+        </section>
+
+        <!-- Service list (filterable) -->
+        <section class="container">
+            <div id="serviceList">
+                <article class="service-item" data-name="kitchen cabinets">
+                    <img src="images/custom-kitchen-cabinets-cape-town.jpg" alt="Custom oak kitchen cabinets in Cape Town">
+                    <div class="service-item-content">
+                        <h2>Kitchen Cabinets</h2>
+                        <p>Our specialty. We design and install custom kitchen cabinets that maximise space and are built to last. We work with you to choose the right materials and finishes for your budget.</p>
+                    </div>
+                </article>
+                <article class="service-item" data-name="built-in wardrobes">
+                    <img src="images/built-in-wardrobe-khayelitsha.jpg" alt="Built-in bedroom wardrobe in Khayelitsha">
+                    <div class="service-item-content">
+                        <h2>Built-in Wardrobes</h2>
+                        <p>Say goodbye to clutter. We create beautiful, spacious built-in wardrobes that fit perfectly in your bedroom, utilising every inch of available space.</p>
+                    </div>
+                </article>
+                <article class="service-item" data-name="tv stands custom pieces">
+                    <img src="images/custom-tv-stand-cape-town.jpg" alt="Modern oak TV stand in Cape Town">
+                    <div class="service-item-content">
+                        <h2>TV Stands & Custom Pieces</h2>
+                        <p>Need a unique piece? We build custom TV stands, coffee tables, and other home items to match your specific style and space requirements.</p>
+                    </div>
+                </article>
+            </div>
+            <p id="noResults" class="no-results">No services match your search.</p>
+        </section>
+
+        <!-- Accordion: material options -->
+        <section class="container accordion-section">
+            <h2>Material Options Explained</h2>
+            <div class="accordion">
+                <button class="accordion-btn" aria-expanded="false">Melamine — Affordable & Durable</button>
+                <div class="accordion-panel">
+                    <p>Melamine is a cost-effective option for kitchen cabinets and wardrobes. It is easy to clean, resists moisture, and comes in a wide range of colours. Ideal for rental properties and budget-conscious renovations.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-btn" aria-expanded="false">Solid Wood — Premium & Timeless</button>
+                <div class="accordion-panel">
+                    <p>Solid wood offers natural beauty, durability, and long-term value. Oak and pine are popular choices for custom kitchen cabinets and TV stands. Best for homeowners wanting a premium finish.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery with lightbox -->
+        <section class="container gallery-section">
+            <h2>Our Recent Work</h2>
+            <div class="gallery-grid">
+                <img src="images/custom-kitchen-cabinets-cape-town.jpg" alt="Custom oak kitchen cabinets" class="gallery-img">
+                <img src="images/built-in-wardrobe-khayelitsha.jpg" alt="Built-in wardrobe" class="gallery-img">
+                <img src="images/custom-tv-stand-cape-town.jpg" alt="Oak TV stand" class="gallery-img">
+                <img src="images/kitchen-project-02.jpg" alt="Modern kitchen renovation" class="gallery-img">
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Start Your Project?</h2>
+            <a href="enquiry.html" class="cta-button">Request a Quote Today</a>
+        </section>
+    </main>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged portfolio image">
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sipho's Custom Carpentry. All rights reserved.</p>
+        <p>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a> |
+            <a href="https://wa.me/27000000000" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
