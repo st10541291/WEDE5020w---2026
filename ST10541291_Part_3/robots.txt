@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://monumental-peony-197152.netlify.app/sitemap.xml
